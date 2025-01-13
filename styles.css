@@ -72,8 +72,8 @@ nav a {
 }
 
 #carousel > div > img {
-    width: 50vw;
-    height: auto;
+    width: auto;
+    height: 10vw;
 }
 
 @keyframes scroll {
