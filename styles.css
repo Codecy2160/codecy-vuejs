@@ -42,8 +42,9 @@ body {
 }
 
 #navbar-logo img{
-    width: auto;
-    height: 80vh;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
     margin-right: auto;
 }
 
