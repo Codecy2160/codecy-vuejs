@@ -57,12 +57,26 @@ nav a {
 
 #carousel {
     width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     margin-top: 2vh;
     color: white;
+}
+
+#carousel > div {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    margin: 0 10px;
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% + 100vw)); }
+}
+
+#carousel {
+    animation: scroll 20s linear infinite;
 }
 
 .main-button {
