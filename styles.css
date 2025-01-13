@@ -55,6 +55,13 @@ nav a {
     color: white;
 }
 
+.about-content {
+    background: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
 #carousel {
     width: 100%;
     display: flex;
@@ -62,7 +69,7 @@ nav a {
     align-items: center;
     flex-direction: column;
     margin-top: 2vh;
-    color: white;
+    color: #f6f3ef;
 }
 
 #carousel img {
