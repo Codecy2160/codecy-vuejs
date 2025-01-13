@@ -14,19 +14,31 @@ body {
     z-index: 0;
 }
 
-nav {
-    backdrop-filter: blur(1px) saturate(10%) drop-shadow(0 0 0.75rem white);
+.navbar {
     display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    box-shadow: 1px 1px 0 white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav a {
-    text-decoration: none;
+.navbar a {
     color: white;
+    text-decoration: none;
     font-size: 1.5rem;
     margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #f6f3ef;
+}
+
+#navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar-logo img{
