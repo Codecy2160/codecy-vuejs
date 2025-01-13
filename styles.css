@@ -98,7 +98,6 @@ h1.display-4 {
 }
 
 #carousel button {
-    background-color: #0a0a0a;
     border: none;
     color: #f6f3ef;
     padding: 10px 20px;
@@ -106,7 +105,8 @@ h1.display-4 {
     text-decoration: none;
     display: block;
     font-size: 1.5rem;
-    margin: 4px auto;
+    margin-left: 20px;
+    margin-right: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
