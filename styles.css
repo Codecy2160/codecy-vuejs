@@ -59,7 +59,26 @@ body {
     padding-top: 5vh;
     width: 50vw;
     height: auto;
-    
+}
+
+.main-button {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    margin: 4px auto;
+    margin-bottom: 20vh;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    z-index: 900;
 }
 
 #about {
