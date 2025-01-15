@@ -227,3 +227,11 @@ h1.display-4 {
     margin-top: 2vh;
     color: #f6f3ef;
 }
+
+#input-field {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: max-content;
+    height: 25vh;
+}
