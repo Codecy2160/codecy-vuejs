@@ -109,8 +109,8 @@ h1.display-4 {
 }
 
 #carousel {
-    width: 100%;
-    display: flex;
+    width: 300px;
+    display: block;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -135,6 +135,14 @@ h1.display-4 {
     margin: 0 20px; /* Keep distance between buttons static */
     cursor: pointer;
     transition-duration: 0.4s;
+}
+
+.caorusel-control-prev {
+    float: left;
+}
+
+.caorusel-control-next {
+    float: right;
 }
 
 #carousel-item img {
