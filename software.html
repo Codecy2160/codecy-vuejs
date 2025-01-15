@@ -42,9 +42,15 @@
         </nav>
     </head>
     <body>
-        <div id="profile-card" class="github-card" data-github="codecy2160" data-width="400" data-height="" data-theme="medium"></div>
-        <div id="repo-cards">
-            <div class="github-card" data-github="Codecy2160/manga-bubble-shaper" data-width="400" data-height="" data-theme="default"></div>
+        <div id="github">
+            <div id="profile-card" class="github-card" data-github="codecy2160" data-width="400" data-height="" data-theme="medium"></div>
+            <div id="repo-cards">
+                <div class="github-card" data-github="Codecy2160/manga-bubble-shaper" data-width="400" data-height="" data-theme="default"></div>
+            </div>
+        </div>
+        <div id="shaper-playfield">
+            <input type="text" id="input-field" placeholder="Enter text here">
+            <button @click="shapeText" class="main-button">Shape Text</button>
         </div>
         <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     </body>

@@ -174,6 +174,19 @@ h1.display-4 {
     z-index: 900;
 }
 
+.github-card {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
 .profile-card {
     background-color: #f6f3ef;
     border-radius: 10px;
