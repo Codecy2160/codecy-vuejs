@@ -324,8 +324,8 @@ h1.display-4 {
     }
   }
 
-  .masonry-item img {
-    max-width: 50vw;
+.masonry-item img {
+    width: 35vw; 
     height: auto;
     margin: 2vh 0;
-  }
+}
