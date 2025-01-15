@@ -53,7 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto; /* Center the div horizontally */
-    margin-top: 10vh; /* Add some space at the top */
+    margin-top: 15vh; /* Add some space at the top */
 }
 
 #logo img{
@@ -141,13 +141,6 @@ h1.display-4 {
     width: 50vw;
     height: auto;
     margin: 2vh 0;
-}
-
-.carousel-image {
-    width: 100%;
-    height: 50vw; /* Set the height of the carousel images */
-    object-fit: cover; /* Scale the images to cover the container */
-    overflow: hidden; /* Hide any excess image content */
 }
 
 .carousel-image img {
