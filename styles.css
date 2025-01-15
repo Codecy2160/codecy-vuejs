@@ -173,3 +173,18 @@ h1.display-4 {
     transition-duration: 0.4s;
     z-index: 900;
 }
+
+.profile-card {
+    background-color: #f6f3ef;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+.repo-cars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
