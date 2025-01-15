@@ -362,3 +362,40 @@ const app = new Vue({
         }
     }
 });
+
+import Masonry from 'masonry-layout';
+
+export default {
+    data() {
+        return {
+            photos: []
+        }
+    },
+    mounted() {
+        this.loadPhotos();
+    },
+    methods: {
+        loadPhotos() {
+            fetch('https://api.github.com/repos/codecy2160/codecy/contents/source/portfolio')
+                .then(response => response.json())
+                .then(data => {
+                    const photos = data.filter(file => file.name.endsWith('.jpg'));
+                    this.photos = photos.map(photo => ({
+                        url: `https://raw.githubusercontent.com/codecy2160/codecy/main/source/portfolio/${photo.name}`,
+                        name: photo.name
+                    }));
+                    this.initMasonry();
+                })
+                .catch(error => console.error(error));
+        },
+        initMasonry() {
+            const masonryGallery = this.$refs.masonryGallery;
+            const masonry = new Masonry(masonryGallery, {
+                itemSelector: '.masonry-item',
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer',
+                percentPosition: true,
+            });
+        }
+    }
+}
