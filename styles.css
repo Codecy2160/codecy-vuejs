@@ -323,3 +323,9 @@ h1.display-4 {
       padding: 5px 10px;
     }
   }
+
+  .masonry-item img {
+    max-width: 50vw;
+    height: auto;
+    margin: 2vh 0;
+  }
