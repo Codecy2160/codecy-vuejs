@@ -1,5 +1,12 @@
-function scrollToAbout() {
-    const aboutElement = document.querySelector('#about');
-    const offsetTop = aboutElement.offsetTop;
-    window.scrollTo({ top: offsetTop - 20, behavior: 'smooth' }); // Adjust the 20 to the desired offset
-}
+const app = new Vue({
+    el: '#app',
+    methods: {
+        scrollToAbout() {
+            const aboutElement = this.$el.querySelector('#about');
+            const offsetTop = aboutElement.offsetTop;
+            window.scrollTo({ top: offsetTop - 20, behavior: 'smooth' });
+        }
+    }
+});
+
+app.$mount('#app');
