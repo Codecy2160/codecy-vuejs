@@ -241,3 +241,83 @@ h1.display-4 {
     white-space: pre-wrap;
     box-sizing: border-box;
 }
+
+/* Contact Form Styles */
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f6f3ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-primary {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #121212;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+    }
+    .form-control {
+      padding: 5px;
+    }
+    .btn-primary {
+      padding: 5px 10px;
+    }
+  }
