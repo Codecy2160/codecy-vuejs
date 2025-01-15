@@ -232,6 +232,12 @@ h1.display-4 {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    width: max-content;
-    height: 25vh;
+    width: auto;
+    min-height: 25vh;
+    padding: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
 }
