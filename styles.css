@@ -53,6 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto; /* Center the div horizontally */
+    margin-top: 10vh; /* Add some space at the top */
 }
 
 #logo img{
@@ -90,6 +91,7 @@ body {
     flex-direction: column;
     margin-top: 2vh;
     color: white;
+    text-shadow: 0 0 10px black; /* Add black outer glow to text */
 }
 
 .about-content {
@@ -116,6 +118,12 @@ h1.display-4 {
     color: #f6f3ef;
 }
 
+#carousel img {
+    height: 300px; /* Set a uniform height for all images */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
 #carousel button {
     border: none;
     color: #f6f3ef;
@@ -124,8 +132,7 @@ h1.display-4 {
     text-decoration: none;
     display: block;
     font-size: 1.5rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px; /* Keep distance between buttons static */
     cursor: pointer;
     transition-duration: 0.4s;
 }
