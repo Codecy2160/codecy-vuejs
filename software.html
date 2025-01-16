@@ -47,8 +47,13 @@
                 </div>
             </div>
             <div id="shaper-playfield">
-                <input type="text" id="input-field" class="expand-input" placeholder="Enter text here">
-                <button @click="shapeText" class="main-button">Shape Text</button>
+                <div id="shaper-input">
+                    <input type="text" id="input-field" class="expand-input" placeholder="Enter text here">
+                    <button @click="shapeText" class="main-button">Shape Text</button>
+                </div>
+                <div id="shaper-output">
+                    <h2>Shaped Text</h2>
+                </div>
             </div>
         </div>
         <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>

@@ -187,7 +187,7 @@ h1.display-4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 2vh;
     color: #f6f3ef;
 }
@@ -220,39 +220,49 @@ h1.display-4 {
     margin-top: 2vh;
 }
 
+#github::after {
+    padding-bottom: 15vh;
+}
+
 #shaper-playfield {
     display: flex;
+    flex-direction: row; /* Ensure elements are in a row */
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 20px; /* Add spacing between input and output */
     margin-top: 2vh;
     color: #f6f3ef;
 }
 
-#input-field {
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    width: 100%;
-    min-height: 5vh;
+#shaper-input, #shaper-output {
+    display: inline-block; /* Make them inline */
+    width: 40%; /* Adjust width as needed */
+    min-height: 20vh;
     padding: 10px;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     word-wrap: break-word;
     word-break: break-word;
     white-space: pre-wrap;
     box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.expand-input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    word-wrap: break-word; 
-    word-break: break-all; 
+#shaper-input {
+    background-color: #f6f3ef; /* Light background for input */
+    color: #0a0a0a; /* Dark text for contrast */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#shaper-output {
+    background-color: #0a0a0a; /* Dark background for output */
+    color: #f6f3ef; /* Light text for contrast */
+    border-radius: 10px;
+    text-shadow: black 0 0 10px;
 }
 
 .container {
