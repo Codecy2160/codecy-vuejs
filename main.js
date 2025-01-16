@@ -1,5 +1,14 @@
-const app = new Vue({
-    el: '#app',
+import Masonry from 'masonry-layout';
+
+export default {
+    data() {
+        return {
+            photos: []
+        }
+    },
+    mounted() {
+        this.loadPhotos();
+    },
     methods: {
         scrollToAbout() {
             const aboutElement = this.$el.querySelector('#about');
@@ -359,22 +368,7 @@ const app = new Vue({
                 }
             }
             return this.$el.querySelector('#output-text').value = split.join('\r');
-        }
-    }
-});
-
-import Masonry from 'masonry-layout';
-
-export default {
-    data() {
-        return {
-            photos: []
-        }
-    },
-    mounted() {
-        this.loadPhotos();
-    },
-    methods: {
+        },
         loadPhotos() {
             fetch('https://api.github.com/repos/codecy2160/codecy/contents/source/portfolio')
                 .then(response => response.json())
