@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import PersonalProfile from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 const app = createApp(App)
-app.component('personal-profile', PersonalProfile)
+app.component('hello-world', HelloWorld)
 createApp(App).mount('#app')
