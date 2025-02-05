@@ -13,12 +13,13 @@
 
 <script>
 import { ref } from 'vue';
-//import Navbar from './components/Navbar.vue';
-//import AboutSection from './components/AboutSection.vue';
-//import Carousel from './components/Carousel.vue';
-//import FooterComponent from './components/FooterComponent.vue';
+import Navbar from './components/Navbar.vue';
+import AboutSection from './components/AboutSection.vue';
+import Carousel from './components/Carousel.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
+  namer: 'PersonalProfile',
   components: {
     Navbar,
     AboutSection,
