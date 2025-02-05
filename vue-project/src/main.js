@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
+
 import App from './App.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import FoodItem from './components/FoodItem.vue'
 
 const app = createApp(App)
-app.component('hello-world', HelloWorld)
-createApp(App).mount('#app')
+app.component('food-item', FoodItem)
+app.mount('#app')
