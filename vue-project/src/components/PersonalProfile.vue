@@ -29,6 +29,8 @@ export default {
     AboutSection,
     Carousel,
     FooterComponent,
+    CommentForm,
+    CommentList,
   },
   setup() {
     const aboutSection = ref(null);
