@@ -7,6 +7,8 @@
     <button @click="scrollToAbout" class="main-button">About Me</button>
     <AboutSection ref="aboutSection" />
     <Carousel />
+    <CommentForm />
+    <CommentList />
     <FooterComponent />
   </div>
 </template> 
@@ -17,6 +19,8 @@ import Navbar from './Navbar.vue';
 import AboutSection from './AboutSection.vue';
 import Carousel from './Carousel.vue';
 import FooterComponent from './Footer.vue';
+import CommentForm from './CommentForm.vue';
+import CommentList from './CommentList.vue';
 
 export default {
   namer: 'PersonalProfile',
