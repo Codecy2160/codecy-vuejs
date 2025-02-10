@@ -9,6 +9,7 @@
     <Carousel />
     <CommentForm />
     <CommentList />
+    <RestAPI />
     <FooterComponent />
   </div>
 </template> 
@@ -21,6 +22,7 @@ import Carousel from './Carousel.vue';
 import FooterComponent from './Footer.vue';
 import CommentForm from './CommentForm.vue';
 import CommentList from './CommentList.vue';
+import RestAPI from './RestAPI.vue';
 
 export default {
   namer: 'PersonalProfile',
@@ -31,6 +33,7 @@ export default {
     FooterComponent,
     CommentForm,
     CommentList,
+    RestAPI,
   },
   setup() {
     const aboutSection = ref(null);
