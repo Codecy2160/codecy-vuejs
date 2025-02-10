@@ -13,7 +13,7 @@
   </template>
   
   <script>
-  import { supabase } from '../supabaseClient.js';
+  import { supabase } from '../supabaseClient';
   
   export default {
     data() {
