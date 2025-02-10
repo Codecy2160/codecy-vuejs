@@ -22,7 +22,7 @@
   </template>
   
   <script>
-  import { supabase } from '../supabase';
+  import { supabase } from '../supabaseClient.js';
   
   export default {
     data() {
