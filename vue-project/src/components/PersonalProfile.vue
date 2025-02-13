@@ -6,10 +6,10 @@
     </div>
     <button @click="scrollToAbout" class="main-button">About Me</button>
     <AboutSection ref="aboutSection" />
+    <RestAPI />
     <Carousel />
     <CommentForm />
     <CommentList />
-    <RestAPI />
     <FooterComponent />
   </div>
 </template> 
